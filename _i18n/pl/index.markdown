@@ -1,0 +1,412 @@
+<!-- ---
+layout: none
+shop_name: Guten Rug studio
+title: Guten Rug Studio - Home
+languages: ["pl"]
+permalink: /pl/
+--- -->
+
+<html>
+
+  <head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Welcome to the Guten Rug studio. Here, you can find unique, stylish, and handmade rugs that will perfectly fit your house or apartment. Explore our completed projects and get inspired">
+  <meta name="author" content="">
+  <link rel="canonical" href="http://localhost:4000/">
+
+  <title>Guten Rug Studio - Home</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{'/assets/css/bootstrap.min.css' | relative_url}}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{{'/assets/css/all.min.css' | relative_url}}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this theme -->
+  <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
+  <link href="{{'/assets/css/carpet-shop-home.css' | relative_url}}" rel="stylesheet">
+  
+  
+  <!-- Page container change top padding when nav shrinks -->
+  
+  
+</head>
+
+<body id="page-top">
+
+        <!-- Navigation -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+	  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <img class="guten-rug-nav-logo" src="{{'/assets/img/logo_guten_rug_3_edited.jpg' | relative_url}}"/>
+    </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto"><li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">{% translate pl.index.nav_buttons.offer %}</a></li>
+		  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">{% translate pl.index.nav_buttons.portfolio %}</a></li>
+		  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#timeline">{% translate pl.index.nav_buttons.about %}</a></li>
+		  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">{% translate pl.index.nav_buttons.team %}</a></li>
+		  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">{% translate pl.index.nav_buttons.contact %}</a></li>
+      {% for lang in site.languages %}
+        {% if lang == 'en' %}
+          <li class="lang-switch"><a href="/">{{ lang }}</a></li>
+        {% endif %}
+        {% if lang != 'en' %}
+          <li class="lang-switch"><a href="/{{ lang }}">{{ lang }}</a></li>
+        {% endif %}
+      {% endfor %}
+		</ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navigation -->
+  
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">
+            <p>{% translate pl.index.header_text_first %}</p>
+        </div>
+        <div class="intro-heading text-uppercase">
+            <p>{% translate pl.index.header_text_second %}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+<!-- Services -->
+  <section class="page-section" id="services">
+    <div class="container">
+	    <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">{% translate pl.index.services_section_text_first %}</h2>
+                <h3 class="section-subheading text-muted">{% translate pl.index.description %}</h3>
+		  </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-6">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading"><p>{% translate pl.index.services_section_text_second %}</p>
+</h4>
+          <div class="text-muted"><p>{% translate pl.index.services_section_text_third %}</p>
+</div>
+        </div>
+        <div class="col-md-6">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading"><p>{% translate pl.index.services_section_text_fourth %}</p>
+</h4>
+          <div class="text-muted"><p>{% translate pl.index.services_section_text_five %}</p>
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- End Services -->
+<!-- Portfolio Grid -->
+<section class="bg-light page-section" id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase"><p>Portfolio</p></h2>
+        <div class="row text-center">
+          {% for post in site.posts %}
+          <div class="col-md-6">
+            <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+            <p>{{ post.description }}</p>
+            <img class="post-lable-img"  src='{{ post.post_lable }}' alt='post image'/>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Modals -->
+
+<!-- About -->
+  <section class="page-section" id="timeline">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase"><p>{% translate pl.index.about_text_first %}</p>
+</h2>
+          <h3 class="section-subheading text-muted">Guten Rug Tufting Studio</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+			<li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{{'/assets/img/timeline/1.jpg' | relative_url}}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4><p>{% translate pl.index.about_text_second %}</p>
+</h4>
+                  <h4 class="subheading">{% translate pl.index.about_text_third %}</h4>
+                </div>
+                <div class="timeline-body">
+                  <div class="text-muted"><p>{% translate pl.index.about_text_fourth %}</p>
+</div>
+                </div>
+              </div>
+            </li>
+			<li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{{'/assets/img/frame.png' | relative_url}}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4><p>{% translate pl.index.about_text_five %}</p>
+</h4>
+                  <h4 class="subheading">{% translate pl.index.about_text_sixth %}
+</h4>
+                </div>
+                <div class="timeline-body">
+                  <div class="text-muted"><p>{% translate pl.index.about_text_seventh %}</p>
+</div>
+                </div>
+              </div>
+            </li>
+			<li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{{'/assets/img/work_begin.png' | relative_url}}" alt="image alt text">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4><p>{% translate pl.index.about_text_eighth %}</p>
+</h4>
+                  <h4 class="subheading">{% translate pl.index.about_text_nineth %}</h4>
+                </div>
+                <div class="timeline-body">
+                  <div class="text-muted"><p>{% translate pl.index.about_text_tenth %}</p>
+</div>
+                </div>
+              </div>
+            </li>
+			<li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>{% translate pl.index.about_text_eleventh %} <br> {% translate pl.index.about_text_twelfth %} <br> {% translate pl.index.about_text_thirteenth %}</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- End About -->
+<!-- Team -->
+<section class="bg-light page-section" id="team">
+<div class="container">
+  <div class="row">
+	<div class="col-lg-12 text-center">
+	  <h2 class="section-heading text-uppercase">{% translate pl.index.team_text_first %}</h2>
+	  <h3 class="section-subheading text-muted">{% translate pl.index.team_text_second %}</h3>
+	</div>
+  </div>
+  <div class="row">
+	<div class="col-sm-6">
+	  <div class="team-member">
+		<img class="mx-auto rounded-circle" src="{{'/assets/img/female contact avatar without headphones.png' | relative_url}}" alt="">
+		<h4>Julia Pashkov</h4>
+		<p class="text-muted">{% translate pl.index.team_text_third %}</p>
+		<ul class="list-inline social-buttons">
+		  <li class="list-inline-item">
+			<a href="https://twitter.com">
+			  <i class="fab fa-twitter"></i>
+			</a>
+		  </li>
+		  <li class="list-inline-item">
+			<a href="https://facebook.com">
+			  <i class="fab fa-facebook-f"></i>
+			</a>
+		  </li>
+		  <li class="list-inline-item">
+			<a href="https://linkedin.com">
+			  <i class="fab fa-linkedin-in"></i>
+			</a>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+	<div class="col-sm-6">
+	  <div class="team-member">
+		<img class="mx-auto rounded-circle" src="{{'/assets/img/male contact avatar without words.png' | relative_url}}" alt="">
+		<h4>Roman Pashkov</h4>
+		<p class="text-muted">{% translate pl.index.team_text_fourth %}</p>
+		<ul class="list-inline social-buttons">
+		  <li class="list-inline-item">
+			<a href="https://twitter.com">
+			  <i class="fab fa-twitter"></i>
+			</a>
+		  </li>
+		  <li class="list-inline-item">
+			<a href="https://facebook.com">
+			  <i class="fab fa-facebook-f"></i>
+			</a>
+		  </li>
+		  <li class="list-inline-item">
+			<a href="https://linkedin.com">
+			  <i class="fab fa-linkedin-in"></i>
+			</a>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+  
+  </div>
+  <div class="row">
+	<div class="col-lg-8 mx-auto text-center">
+	  <div class="large text-muted"><p>{% translate pl.index.team_text_five %}</p>
+</div>
+	</div>
+  </div>
+</div>
+</section>
+<!-- End Team -->
+<!-- Clients -->
+  <!-- <section class="py-5" id=""clients>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <a href="https://github.com/raviriley/agency-jekyll-theme">
+            <img class="img-fluid d-block mx-auto" src="assets/img/clients/envato.jpg" alt="envato">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="https://github.com/raviriley/agency-jekyll-theme">
+            <img class="img-fluid d-block mx-auto" src="assets/img/clients/designmodo.jpg" alt="designmodo">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="https://github.com/raviriley/agency-jekyll-theme">
+            <img class="img-fluid d-block mx-auto" src="assets/img/clients/themeforest.jpg" alt="themeforest">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="https://github.com/raviriley/agency-jekyll-theme">
+            <img class="img-fluid d-block mx-auto" src="assets/img/clients/creative-market.jpg" alt="Creative Market">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+<!-- Contact -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase"><p><a href="https://ig.me/m/guten_rug" target="_blank">Contact Us</a></p>
+</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form action="https://formspree.io/f/xeoevzaq" method="POST">
+		  <!--name="sentMessage"--> 
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input name="name" class="form-control" id="name" type="text" placeholder="Name*" required="required" data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input name="_replyto" class="form-control" id="email" type="email" placeholder="Email*" required="required" data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input name="phone" class="form-control" id="phone" type="tel" placeholder="Phone Number*" required="required" data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea name="message" class="form-control" id="message" placeholder="Message*" required="required" data-validation-required-message="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+			  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+              </div>
+			  <input type="text" name="_gotcha" style="display:none">
+			  <input type="hidden" name="_next" value="#"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- End Contact -->
+
+        <!-- Footer -->
+
+  <footer class="footer" style="background-color:">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Guten Rug Studio 2024</span>
+        </div>
+		<!-- Social Media -->
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/share/157JdeEHAs/?mibextid=wwXIfr">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/guten_rug/">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+		<!-- Legal -->
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a href="legal">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+      <!-- Bootstrap core JavaScript -->
+      <script src="{{'/assets/js/jquery.min.js' | relative_url}}"></script>
+      <script src="{{'/assets/js/bootstrap.bundle.min.js' | relative_url}}"></script>
+      <!-- Plugin JavaScript -->
+      <script src="{{'/assets/js/jquery.easing.min.js' | relative_url}}"></script>
+      <!-- Contact form JavaScript -->
+      <script src="{{'/assets/js/jqBootstrapValidation.js' | relative_url}}"></script>
+      <script src="{{'/assets/js/contact_me.js' | relative_url}}"></script>
+      <!-- Custom scripts for this template -->
+      <script src="{{'/assets/js/agency.min.js' | relative_url}}"></script>
+</body>
+</html>
