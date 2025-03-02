@@ -21,8 +21,8 @@ cloud_name: test
 title: Guten Rug Studio
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to the Guten Rug studio. Here, you can find unique, stylish, and handmade rugs that will perfectly fit your house or apartment. Explore our completed projects and get inspired
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "https://Roman92P.github.io" # the subpath of your site, e.g. /blog
+url: "/gutenrug.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: guten_rug
 github_username: guten_rug
 
