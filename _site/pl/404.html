@@ -1,6 +1,3 @@
----
----
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,15 +12,15 @@
     />
     <meta name="author" content="" />
     <link rel="canonical" href="http://localhost:4000/" />
-    <title>{{ page.title | escape}}</title>
+    <title></title>
     <!-- Bootstrap core CSS -->
     <link
-      href="{{'assets/css/bootstrap.min.css' | relative_url}}"
+      href="/assets/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <!-- Custom fonts for this template -->
     <link
-      href="{{'assets/css/all.min.css' | relative_url}}"
+      href="/assets/css/all.min.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -50,7 +47,7 @@
     <!-- Custom styles for this theme -->
     <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
     <link
-      href="{{'assets/css/carpet-shop-home.css' | relative_url}}"
+      href="/assets/css/carpet-shop-home.css"
       rel="stylesheet"
     />
     <!-- Page container change top padding when nav shrinks -->
@@ -63,7 +60,7 @@
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
           <img
             class="guten-rug-nav-logo-short"
-            src="{{'assets/img/logo_guten_rug_3_edited.jpg' | relative_url}}"
+            src="/assets/img/logo_guten_rug_3_edited.jpg"
           />
         </a>
         <button
@@ -83,8 +80,8 @@
             <li class="nav-item">
               <a
                 class="nav-link js-scroll-trigger"
-                href="{{ site.data.navigation.links[0].url }}"
-                >{{ site.data.navigation.links[0].title }}</a
+                href="/"
+                >Home</a
               >
             </li>
           </ul>
@@ -99,7 +96,27 @@
       </div>
     </header>
     <!-- End Header -->
-    <main class="content-container">{{ content }}</main>
+    <main class="content-container"><style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container">
+  <h1>404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>
+</main>
     <!-- Contact -->
     <section class="page-section" id="contact">
       <div class="container">
@@ -230,14 +247,14 @@
     </footer>
     <!-- End Footer -->
     <!-- Bootstrap core JavaScript -->
-    <script src="{{'assets/js/jquery.min.js' | relative_url}}"></script>
-    <script src="{{'assets/js/bootstrap.bundle.min.js' | relative_url}}"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <!-- Plugin JavaScript -->
-    <script src="{{'assets/js/jquery.easing.min.js' | relative_url}}"></script>
+    <script src="/assets/js/jquery.easing.min.js"></script>
     <!-- Contact form JavaScript -->
-    <script src="{{'assets/js/jqBootstrapValidation.js' | relative_url}}"></script>
-    <script src="{{'assets/js/contact_me.js' | relative_url}}"></script>
+    <script src="/assets/js/jqBootstrapValidation.js"></script>
+    <script src="/assets/js/contact_me.js"></script>
     <!-- Custom scripts for this template -->
-    <script src="{{'assets/js/agency.min.js' | relative_url}}"></script>
+    <script src="/assets/js/agency.min.js"></script>
   </body>
 </html>
