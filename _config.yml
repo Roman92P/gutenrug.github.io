@@ -27,7 +27,6 @@ twitter_username: guten_rug
 github_username: guten_rug
 
 # Build settings
-theme: jekyll-agency
 remote_theme: "jekyll-agency"
 plugins:
   - jekyll-feed
