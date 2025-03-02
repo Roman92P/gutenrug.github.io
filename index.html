@@ -1,4 +1,12 @@
-<html lang="en">
+---
+layout: none
+title: Guten Rug Studio - Home
+permalink: /
+redirect_to: /en/
+lang: en
+---
+
+<html lang="{{ site.lang }}">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -14,12 +22,12 @@
     <title>Guten Rug Studio - Home</title>
     <!-- Bootstrap core CSS -->
     <link
-      href="/assets/css/bootstrap.min.css"
+      href="{{'/assets/css/bootstrap.min.css' | relative_path}}"
       rel="stylesheet"
     />
     <!-- Custom fonts for this template -->
     <link
-      href="/https://Roman92P.github.io/assets/css/all.min.css"
+      href="{{'/assets/css/all.min.css' | relative_url}}"
       rel="stylesheet"
       type="text/css"
     />
@@ -46,7 +54,7 @@
     <!-- Custom styles for this theme -->
     <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
     <link
-      href="/https://Roman92P.github.io/assets/css/carpet-shop-home.css"
+      href="{{'/assets/css/carpet-shop-home.css' | relative_url}}"
       rel="stylesheet"
     />
   </head>
@@ -57,7 +65,7 @@
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
           <img
             class="guten-rug-nav-logo"
-            src="/https://Roman92P.github.io/assets/img/logo_guten_rug_3_edited.jpg"
+            src="{{'/assets/img/logo_guten_rug_3_edited.jpg' | relative_url}}"
           />
         </a>
 
@@ -77,34 +85,34 @@
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services"
-                >Offer</a
+                >{% t index.nav_buttons.offer %}</a
               >
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio"
-                >Portfolio</a
+                >{% t index.nav_buttons.portfolio %}</a
               >
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#timeline"
-                >About</a
+                >{% t index.nav_buttons.about %}</a
               >
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team"
-                >Team</a
+                >{% t index.nav_buttons.team %}</a
               >
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact"
-                >Contact</a
+                >{% t index.nav_buttons.contact %}</a
               >
             </li>
-             
-            <li class="lang-switch"><a href="/">en</a></li>
-                
-            <li class="lang-switch"><a href="/pl">pl</a></li>
-             
+            {% for lang in site.languages %} {% if lang == 'en' %}
+            <li class="lang-switch"><a href="/">{{ lang }}</a></li>
+            {% endif %} {% if lang != 'en' %}
+            <li class="lang-switch"><a href="/{{ lang }}">{{ lang }}</a></li>
+            {% endif %} {% endfor %}
           </ul>
         </div>
       </div>
@@ -115,10 +123,10 @@
       <div class="container">
         <div class="intro-text">
           <div class="intro-lead-in">
-            <p>Get Inspired!</p>
+            <p>{% t index.header_text_first %}</p>
           </div>
           <div class="intro-heading text-uppercase">
-            <p>Handmade rugs</p>
+            <p>{% t index.header_text_second %}</p>
           </div>
         </div>
       </div>
@@ -130,10 +138,10 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">
-              Our offer
+              {% t index.services_section_text_first %}
             </h2>
             <h3 class="section-subheading text-muted">
-              Welcome to our Guten Rug tufting studio. Here you will find unique, stylish and handmade rugs that will perfectly fit your home or apartment. Discover our projects and get inspired.
+              {% t index.description %}
             </h3>
           </div>
         </div>
@@ -144,10 +152,10 @@
               <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">
-              <p>Create your unique rug</p>
+              <p>{% t index.services_section_text_second %}</p>
             </h4>
             <div class="text-muted">
-              <p>Contact us and share your vision of the perfect rug. You can even provide your own image. We will prepare a detailed timeline and cost estimate for you.</p>
+              <p>{% t index.services_section_text_third %}</p>
             </div>
           </div>
           <div class="col-md-6">
@@ -156,10 +164,10 @@
               <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">
-              <p>Purchase rug</p>
+              <p>{% t index.services_section_text_fourth %}</p>
             </h4>
             <div class="text-muted">
-              <p>Browse and select from our collection of pre-designed rugs.</p>
+              <p>{% t index.services_section_text_five %}</p>
             </div>
           </div>
         </div>
@@ -173,63 +181,22 @@
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase"><p>Portfolio</p></h2>
             <div class="row text-center">
-                
+              {% assign current_lang = site.lang | default: 'en' %} {% for post
+              in site.posts %} {% if post.lang == current_lang %}
               <div class="col-md-6">
                 <h2>
-                  <a href="https://Roman92P.github.io/sold/2025/01/01/rug-gallery-playground.html"
-                    >Playground rug</a
+                  <a href="{{ post.url | prepend: site.baseurl }}"
+                    >{{ post.title }}</a
                   >
                 </h2>
-                <p>Playground rug for childroom</p>
+                <p>{{ post.description }}</p>
                 <img
                   class="post-lable-img"
-                  src="/gutenrug.github.io/https://Roman92P.github.io/assets/img/playground_1.png"
+                  src="{{ post.post_lable | absolute_url}}"
                   alt="post image"
                 />
               </div>
-                
-              <div class="col-md-6">
-                <h2>
-                  <a href="https://Roman92P.github.io/sold/2025/01/01/rug-gallery-car.html"
-                    >Sport car rug</a
-                  >
-                </h2>
-                <p>Rug for car shop with sport car</p>
-                <img
-                  class="post-lable-img"
-                  src="/gutenrug.github.io/https://Roman92P.github.io/assets/img/car_2.png"
-                  alt="post image"
-                />
-              </div>
-                
-              <div class="col-md-6">
-                <h2>
-                  <a href="https://Roman92P.github.io/sold/2024/12/27/rug-gallery-leaves.html"
-                    >Jungle rug</a
-                  >
-                </h2>
-                <p>New rug with green leaves</p>
-                <img
-                  class="post-lable-img"
-                  src="/gutenrug.github.io/https://Roman92P.github.io/assets/img/leaves_1.png"
-                  alt="post image"
-                />
-              </div>
-                
-              <div class="col-md-6">
-                <h2>
-                  <a href="https://Roman92P.github.io/sold/2024/12/27/rug-gallery-dino.html"
-                    >T-Rex rug</a
-                  >
-                </h2>
-                <p>Rug with offline Chrome T-Rex</p>
-                <img
-                  class="post-lable-img"
-                  src="/gutenrug.github.io/https://Roman92P.github.io/assets/img/dino_1.png"
-                  alt="post image"
-                />
-              </div>
-               
+              {% endif %} {% endfor %}
             </div>
           </div>
         </div>
@@ -243,7 +210,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">
-              <p>About</p>
+              <p>{% t index.about_text_first %}</p>
             </h2>
             <h3 class="section-subheading text-muted">
               Guten Rug Tufting Studio
@@ -257,20 +224,20 @@
                 <div class="timeline-image">
                   <img
                     class="rounded-circle img-fluid"
-                    src="/https://Roman92P.github.io/assets/img/timeline/1.jpg"
+                    src="{{'/assets/img/timeline/1.jpg' | relative_url}}"
                     alt=""
                   />
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h4>
-                      <p>May 2024</p>
+                      <p>{% t index.about_text_second %}</p>
                     </h4>
-                    <h4 class="subheading">Our Humble Beginnings</h4>
+                    <h4 class="subheading">{% t index.about_text_third %}</h4>
                   </div>
                   <div class="timeline-body">
                     <div class="text-muted">
-                      <p>The idea of ​​creating a Tufting studio was born in Wrocław. After completing numerous training courses, receiving the necessary knowledge and skills, we started working. We are still learning intensively how to create the best products for you.</p>
+                      <p>{% t index.about_text_fourth %}</p>
                     </div>
                   </div>
                 </div>
@@ -279,20 +246,20 @@
                 <div class="timeline-image">
                   <img
                     class="rounded-circle img-fluid"
-                    src="/https://Roman92P.github.io/assets/img/frame.png"
+                    src="{{'/assets/img/frame.png' | relative_url}}"
                     alt=""
                   />
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h4>
-                      <p>June - August 2024</p>
+                      <p>{% t index.about_text_five %}</p>
                     </h4>
-                    <h4 class="subheading">Tufting Studio Equipment</h4>
+                    <h4 class="subheading">{% t index.about_text_sixth %}</h4>
                   </div>
                   <div class="timeline-body">
                     <div class="text-muted">
-                      <p>During this time, we have created the necessary equipment for creating the best rugs.</p>
+                      <p>{% t index.about_text_seventh %}</p>
                     </div>
                   </div>
                 </div>
@@ -301,20 +268,20 @@
                 <div class="timeline-image">
                   <img
                     class="rounded-circle img-fluid"
-                    src="/https://Roman92P.github.io/assets/img/work_begin.png"
+                    src="{{'/assets/img/work_begin.png' | relative_url}}"
                     alt="image alt text"
                   />
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h4>
-                      <p>September - December 2024</p>
+                      <p>{% t index.about_text_eighth %}</p>
                     </h4>
-                    <h4 class="subheading">Execution of the first orders</h4>
+                    <h4 class="subheading">{% t index.about_text_nineth %}</h4>
                   </div>
                   <div class="timeline-body">
                     <div class="text-muted">
-                      <p>This time was filled with intensive learning combined with the implementation of the first orders received. You can see more about them in our portfolio.</p>
+                      <p>{% t index.about_text_tenth %}</p>
                     </div>
                   </div>
                 </div>
@@ -322,9 +289,9 @@
               <li class="timeline-inverted">
                 <div class="timeline-image">
                   <h4>
-                    Be Part <br />
-                    of Our <br />
-                    Story!
+                    {% t index.about_text_eleventh %} <br />
+                    {% t index.about_text_twelfth %} <br />
+                    {% t index.about_text_thirteenth %}
                   </h4>
                 </div>
               </li>
@@ -350,7 +317,7 @@
             <div class="team-member">
               <img
                 class="mx-auto rounded-circle"
-                src="/https://Roman92P.github.io/assets/img/female%20contact%20avatar%20without%20headphones.png"
+                src="{{'/assets/img/female contact avatar without headphones.png' | relative_url}}"
                 alt=""
               />
               <h4>Julia Pashkov</h4>
@@ -378,7 +345,7 @@
             <div class="team-member">
               <img
                 class="mx-auto rounded-circle"
-                src="/https://Roman92P.github.io/assets/img/male%20contact%20avatar%20without%20words.png"
+                src="{{'/assets/img/male contact avatar without words.png' | relative_url}}"
                 alt=""
               />
               <h4>Roman Pashkov</h4>
@@ -594,15 +561,15 @@
     </footer>
     <!-- End Footer -->
     <!-- Bootstrap core JavaScript -->
-    <script src="/https://Roman92P.github.io/assets/js/jquery.min.js"></script>
-    <script src="/https://Roman92P.github.io/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="{{'/assets/js/jquery.min.js' | relative_url}}"></script>
+    <script src="{{'/assets/js/bootstrap.bundle.min.js' | relative_url}}"></script>
     <!-- Plugin JavaScript -->
-    <script src="/https://Roman92P.github.io/assets/js/jquery.easing.min.js"></script>
+    <script src="{{'/assets/js/jquery.easing.min.js' | relative_url}}"></script>
     <!-- Contact form JavaScript -->
-    <script src="/https://Roman92P.github.io/assets/js/jqBootstrapValidation.js"></script>
-    <script src="/https://Roman92P.github.io/assets/js/contact_me.js"></script>
+    <script src="{{'/assets/js/jqBootstrapValidation.js' | relative_url}}"></script>
+    <script src="{{'/assets/js/contact_me.js' | relative_url}}"></script>
     <!-- Custom scripts for this template -->
-    <script src="/https://Roman92P.github.io/assets/js/agency.min.js"></script>
+    <script src="{{'/assets/js/agency.min.js' | relative_url}}"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
   </body>
 </html>

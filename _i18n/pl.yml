@@ -1,48 +1,46 @@
----
-pl:
-  index:
-    description: Witamy w naszej pracowni tuftingowej Guten Rug. Znajdziesz tu wyjątkowe, stylowe i ręcznie robione dywany, które idealnie będą pasować do Twojego domu lub mieszkania. Poznaj nasze realizacje i zainspiruj się.
-    nav_buttons:
-      offer: Oferta
-      portfolio: Portfolio
-      about: My
-      team: Zespół
-      contact: Kontakt
-    header_text_first: Zainspiruj się!
-    header_text_second: Handmade rugs
-    services_section_text_first: Nasza oferta
-    services_section_text_second: Stwórz unikalny dywan
-    services_section_text_third:
-      Skontaktuj się z nami i podziel się swoją wizją idealnego dywanu. Możesz
-      nawet dostarczyć własne zdjęcie. Przygotujemy dla Ciebie szczegółowy
-      harmonogram i kosztorys.
-    services_section_text_fourth: Kup gotowy dywan
-    services_section_text_five:
-      Przeglądaj i wybieraj z naszej kolekcji wstępnie zaprojektowanych
-      dywanów.
-    about_text_first: O nas
-    about_text_second: Maj 2024
-    about_text_third: Nasze początki
-    about_text_fourth: Zrodził się pomysł stworzenia pracowni Tuftingowej we Wrocławiu.  Po odbyciu licznych szkoleń, otrzymaniu niezbędnej wiedzy i umiejętności zaczęliśmy działać. Nadal intensywnie uczymy się, jak tworzyć dla Was najlepsze produkty.
-    about_text_five: Czerwiec - Sierpień 2024
-    about_text_sixth: Wyposażenie Tufting Studio
-    about_text_seventh:
-      W tym czasie stworzyliśmy niezbędny sprzęt do tworzenia najlepszych
-      dywanów.
-    about_text_eighth: Wrzesień - Grudzień 2024
-    about_text_nineth: Realizacja pierwszych zamówień
-    about_text_tenth:
-      Czas ten wypełniony był intensywną nauką połączoną z realizacją
-      pierwszych otrzymanych zleceń. Więcej na ich temat można zobaczyć w
-      naszym portfolio.
-    about_text_eleventh: Zostań częścią
-    about_text_twelfth: naszej
-    about_text_thirteenth: Historii!
-    team_text_first: THE CREW
-    team_text_second: Miło Cię poznać :)
-    team_text_third: Twórca
-    team_text_fourth: Asystent
-    team_text_five:
-      Jesteśmy tutaj, aby pomóc Ci stworzyć idealny dywan. Jeśli masz jakieś
-      pytania, nie wahaj się z nami skontaktować. Let's rug it!
-    contact_text: Skontaktuj się z nami
+index:
+  description: Witamy w naszej pracowni tuftingowej Guten Rug. Znajdziesz tu wyjątkowe, stylowe i ręcznie robione dywany, które idealnie będą pasować do Twojego domu lub mieszkania. Poznaj nasze realizacje i zainspiruj się.
+  nav_buttons:
+    offer: Oferta
+    portfolio: Portfolio
+    about: My
+    team: Zespół
+    contact: Kontakt
+  header_text_first: Zainspiruj się!
+  header_text_second: Handmade rugs
+  services_section_text_first: Nasza oferta
+  services_section_text_second: Stwórz unikalny dywan
+  services_section_text_third:
+    Skontaktuj się z nami i podziel się swoją wizją idealnego dywanu. Możesz
+    nawet dostarczyć własne zdjęcie. Przygotujemy dla Ciebie szczegółowy
+    harmonogram i kosztorys.
+  services_section_text_fourth: Kup gotowy dywan
+  services_section_text_five:
+    Przeglądaj i wybieraj z naszej kolekcji wstępnie zaprojektowanych
+    dywanów.
+  about_text_first: O nas
+  about_text_second: Maj 2024
+  about_text_third: Nasze początki
+  about_text_fourth: Zrodził się pomysł stworzenia pracowni Tuftingowej we Wrocławiu.  Po odbyciu licznych szkoleń, otrzymaniu niezbędnej wiedzy i umiejętności zaczęliśmy działać. Nadal intensywnie uczymy się, jak tworzyć dla Was najlepsze produkty.
+  about_text_five: Czerwiec - Sierpień 2024
+  about_text_sixth: Wyposażenie Tufting Studio
+  about_text_seventh:
+    W tym czasie stworzyliśmy niezbędny sprzęt do tworzenia najlepszych
+    dywanów.
+  about_text_eighth: Wrzesień - Grudzień 2024
+  about_text_nineth: Realizacja pierwszych zamówień
+  about_text_tenth:
+    Czas ten wypełniony był intensywną nauką połączoną z realizacją
+    pierwszych otrzymanych zleceń. Więcej na ich temat można zobaczyć w
+    naszym portfolio.
+  about_text_eleventh: Zostań częścią
+  about_text_twelfth: naszej
+  about_text_thirteenth: Historii!
+  team_text_first: THE CREW
+  team_text_second: Miło Cię poznać :)
+  team_text_third: Twórca
+  team_text_fourth: Asystent
+  team_text_five:
+    Jesteśmy tutaj, aby pomóc Ci stworzyć idealny dywan. Jeśli masz jakieś
+    pytania, nie wahaj się z nami skontaktować. Let's rug it!
+  contact_text: Skontaktuj się z nami

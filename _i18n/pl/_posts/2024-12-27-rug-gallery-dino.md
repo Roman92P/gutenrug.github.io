@@ -1,0 +1,17 @@
+---
+layout: default
+title: T-Rex rug
+description: Rug with offline Chrome T-Rex
+dimensions: 80 x 60 cm
+fabric: Acrylic Wool
+price: 400 PLN
+post_lable: assets/img/dino_1.png
+categories: sold
+lang: pl
+---
+
+<div>
+    <div class="col-md-6">
+        <img class="portfolio-img" src="{{'assets/img/dino_1.png' | absolute_url}}"  alt="T-Rex rug"/>
+    </div>
+</div>
