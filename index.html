@@ -112,7 +112,7 @@ lang: en
             <li class="lang-switch"><a href="/">{{ lang }}</a></li>
             {% endif %} {% if lang != 'en' %}
             <li class="lang-switch">
-              <a href="{{ site.baseurl }}/{{ lang }}">{{ lang }}</a>
+              <a href="{site.url}/{{ site.baseurl }}/{{ lang }}">{{ lang }}</a>
             </li>
             {% endif %} {% endfor %}
           </ul>
