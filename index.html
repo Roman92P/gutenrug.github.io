@@ -22,12 +22,12 @@ lang: en
     <title>Guten Rug Studio - Home</title>
     <!-- Bootstrap core CSS -->
     <link
-      href="{{'/assets/css/bootstrap.min.css' | relative_path}}"
+      href="{{'/assets/css/bootstrap.min.css' | absolute_path}}"
       rel="stylesheet"
     />
     <!-- Custom fonts for this template -->
     <link
-      href="{{'/assets/css/all.min.css' | relative_url}}"
+      href="{{'/assets/css/all.min.css' | absolute_path}}"
       rel="stylesheet"
       type="text/css"
     />
@@ -54,7 +54,7 @@ lang: en
     <!-- Custom styles for this theme -->
     <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
     <link
-      href="{{'/assets/css/carpet-shop-home.css' | relative_url}}"
+      href="{{'/assets/css/carpet-shop-home.css' | absolute_path}}"
       rel="stylesheet"
     />
   </head>
@@ -65,7 +65,7 @@ lang: en
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
           <img
             class="guten-rug-nav-logo"
-            src="{{'/assets/img/logo_guten_rug_3_edited.jpg' | relative_url}}"
+            src="{{'/assets/img/logo_guten_rug_3_edited.jpg' | absolute_path}}"
           />
         </a>
 
@@ -111,7 +111,9 @@ lang: en
             {% for lang in site.languages %} {% if lang == 'en' %}
             <li class="lang-switch"><a href="/">{{ lang }}</a></li>
             {% endif %} {% if lang != 'en' %}
-            <li class="lang-switch"><a href="/{{ lang }}">{{ lang }}</a></li>
+            <li class="lang-switch">
+              <a href="{{ site.baseurl }}/{{ lang }}">{{ lang }}</a>
+            </li>
             {% endif %} {% endfor %}
           </ul>
         </div>
@@ -561,15 +563,15 @@ lang: en
     </footer>
     <!-- End Footer -->
     <!-- Bootstrap core JavaScript -->
-    <script src="{{'/assets/js/jquery.min.js' | relative_url}}"></script>
-    <script src="{{'/assets/js/bootstrap.bundle.min.js' | relative_url}}"></script>
+    <script src="{{'/assets/js/jquery.min.js' | absolute_path}}"></script>
+    <script src="{{'/assets/js/bootstrap.bundle.min.js' | absolute_path}}"></script>
     <!-- Plugin JavaScript -->
-    <script src="{{'/assets/js/jquery.easing.min.js' | relative_url}}"></script>
+    <script src="{{'/assets/js/jquery.easing.min.js' | absolute_path}}"></script>
     <!-- Contact form JavaScript -->
-    <script src="{{'/assets/js/jqBootstrapValidation.js' | relative_url}}"></script>
-    <script src="{{'/assets/js/contact_me.js' | relative_url}}"></script>
+    <script src="{{'/assets/js/jqBootstrapValidation.js' | absolute_path}}"></script>
+    <script src="{{'/assets/js/contact_me.js' | absolute_path}}"></script>
     <!-- Custom scripts for this template -->
-    <script src="{{'/assets/js/agency.min.js' | relative_url}}"></script>
+    <script src="{{'/assets/js/agency.min.js' | absolute_path}}"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
   </body>
 </html>
