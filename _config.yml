@@ -27,8 +27,8 @@ twitter_username: guten_rug
 github_username: guten_rug
 
 # Build settings
-theme: jekyll-agency
-remote_theme: "jekyll/agency"
+#theme: jekyll-agency
+remote_theme: agency-jekyll-theme
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
