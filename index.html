@@ -112,7 +112,9 @@ lang: en
               >
             </li>
             {% for lang in site.languages %} {% if lang == 'en' %}
-            <li class="lang-switch"><a href="/">{{ lang }}</a></li>
+            <li class="lang-switch">
+              <a href="{{site.url}}{{site.baseurl}}">{{ lang }}</a>
+            </li>
             {% endif %} {% if lang != 'en' %}
             <li class="lang-switch">
               <a href="{{ lang }}">{{ lang }}</a>
