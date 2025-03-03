@@ -14,7 +14,7 @@
       content="Welcome to the Guten Rug studio. Here, you can find unique, stylish, and handmade rugs that will perfectly fit your house or apartment. Explore our completed projects and get inspired"
     />
     <meta name="author" content="" />
-    <link rel="canonical" href="http://localhost:4000/" />
+    <link rel="canonical" href="https://Roman92P.github.io/gutenrug.github.io/" />
     <title>{{ page.title | escape}}</title>
     <!-- Bootstrap core CSS -->
     <link

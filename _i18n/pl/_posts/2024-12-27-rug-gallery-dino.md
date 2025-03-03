@@ -6,7 +6,6 @@ dimensions: 80 x 60 cm
 fabric: Acrylic Wool
 price: 400 PLN
 post_lable: assets/img/dino_1.png
-categories: sold
 lang: pl
 ---
 

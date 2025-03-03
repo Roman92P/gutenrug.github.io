@@ -6,7 +6,6 @@ dimensions: 120 x 70 cm
 fabric: Acrylic Wool
 price: 600 PLN
 post_lable: assets/img/playground_1.png
-categories: sold
 lang: pl
 ---
 

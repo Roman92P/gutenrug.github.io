@@ -6,7 +6,6 @@ dimensions: 170 x 130 cm
 fabric: Acrylic Wool
 price: 800 PLN
 post_lable: assets/img/leaves_1.png
-categories: sold
 lang: pl
 ---
 

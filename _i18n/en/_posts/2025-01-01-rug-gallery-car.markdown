@@ -6,7 +6,6 @@ dimensions: 80 x 60 cm
 fabric: Acrylic Wool
 price: 500 PLN
 post_lable: assets/img/car_2.png
-categories: sold
 lang: en
 ---
 
