@@ -190,7 +190,9 @@ lang: en
               in site.posts %} {% if post.lang == current_lang %}
               <div class="col-md-6">
                 <h2>
-                  <a href="/{{ site.baseurl }}/{{ post.url }} ">{{ post.title }}</a>
+                  <a href="/{{ site.baseurl }}/{{ post.url }} "
+                    >{{ post.title }}</a
+                  >
                 </h2>
                 <p>{{ post.description }}</p>
                 <img
@@ -323,7 +325,7 @@ lang: en
                 src="{{ '/assets/img/female contact avatar without headphones.png' | absolute_url }}"
                 alt=""
               />
-              <h4>Julia Pashkov</h4>
+              <h4>Julia</h4>
               <p class="text-muted">Creator</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
@@ -351,7 +353,7 @@ lang: en
                 src="{{ '/assets/img/male contact avatar without words.png' | absolute_url }}"
                 alt=""
               />
-              <h4>Roman Pashkov</h4>
+              <h4>Roman</h4>
               <p class="text-muted">Support</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
