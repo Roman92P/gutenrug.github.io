@@ -12,7 +12,7 @@ lang: pl
 <div class="container">
     <div class="row">
         <div class="col-md-5">
-            <img class="portfolio-img" src="{{'assets/img/leaves_1.png' | absolute_urll}}"  alt="Leaves rug 1"/>
+            <img class="portfolio-img" src="{{'assets/img/leaves_1.png' | absolute_url}}"  alt="Leaves rug 1"/>
         </div>
         <div class="col-md-5">
             <img class="portfolio-img" src="{{'assets/img/leaves_2.jpg' | absolute_url}}"  alt="Leaves rug 2"/>
