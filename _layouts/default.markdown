@@ -63,7 +63,7 @@
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
           <img
             class="guten-rug-nav-logo-short"
-            src="{{'/assets/img/logo_guten_rug_3_edited.jpg' | relative_url}}"
+            src="{{'/assets/img/logo.svg' | relative_url}}"
           />
         </a>
         <button
