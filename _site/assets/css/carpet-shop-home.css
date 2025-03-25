@@ -756,12 +756,12 @@ ul.social-p-buttons li a:hover {
 
 .guten-rug-nav-logo-short {
   width: 100%;
-  height: 1%;
+  height: auto;
 }
 
 .guten-rug-nav-logo {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .content-container {
@@ -785,28 +785,28 @@ ul.social-p-buttons li a:hover {
 @media (max-width: 768px) {
   .guten-rug-nav-logo {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 }
 
 @media (max-width: 480px) {
   .guten-rug-nav-logo {
     width: 30%;
-    height: 30%;
+    height: auto;
   }
 }
 
 @media (max-width: 768px) {
   .guten-rug-nav-logo-short {
     width: 100%;
-    height: 1%;
+    height: auto;
   }
 }
 
 @media (max-width: 480px) {
   .guten-rug-nav-logo-short {
     width: 30%;
-    height: 30%;
+    height: auto;
   }
 }
 
