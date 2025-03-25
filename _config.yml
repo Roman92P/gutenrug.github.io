@@ -21,8 +21,8 @@ cloud_name: test
 title: Guten Rug Studio
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to the Guten Rug studio. Here, you can find unique, stylish, and handmade rugs that will perfectly fit your house or apartment. Explore our completed projects and get inspired
-baseurl: "gutenrug.github.io"
-url: "https://Roman92P.github.io/"
+baseurl: ""
+url: "https://gutenrugtuftingstudio.com/"
 # baseurl: ""
 # url: ""
 twitter_username: guten_rug
@@ -36,8 +36,7 @@ plugins:
   - jekyll-multiple-languages-plugin
 languages: ["en", "pl"]
 default_lang: "en"
-exclude_from_localizations:
-  ["assets", "css", "js"]
+exclude_from_localizations: ["assets", "css", "js"]
 default_locale_in_subfolder: false
 collections:
   posts:
