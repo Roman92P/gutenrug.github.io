@@ -28,11 +28,3 @@ defaults:
       path: ""
     values:
       lang: "en"
-exclude:
-  - assets
-  - css
-  - js
-keep_files:
-  - assets
-  - css
-  - js
