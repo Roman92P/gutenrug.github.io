@@ -11,6 +11,6 @@ lang: pl
 
 <div>
     <div class="col-md-6">
-        <img class="portfolio-img" src="{{'assets/img/dino_1.png' | absolute_url}}"  alt="T-Rex rug"/>
+        <img class="portfolio-img" src="{{'/assets/img/dino_1.png' | relative_url}}"  alt="T-Rex rug"/>
     </div>
 </div>
