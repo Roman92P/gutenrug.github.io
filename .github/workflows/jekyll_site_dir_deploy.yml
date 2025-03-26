@@ -36,7 +36,8 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-    
+      - name: Remove /pl/assets directory
+        run: rm -rf ./_site/pl/assets
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
