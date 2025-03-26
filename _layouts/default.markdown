@@ -18,12 +18,12 @@
     <title>{{ page.title | escape}}</title>
     <!-- Bootstrap core CSS -->
     <link
-      href="{{'/assets/css/bootstrap.min.css' | absolute_url}}"
+      href="{{'/assets/css/bootstrap.min.css' | relative_url}}"
       rel="stylesheet"
     />
     <!-- Custom fonts for this template -->
     <link
-      href="{{'/assets/css/all.min.css' | absolute_url}}"
+      href="{{'/assets/css/all.min.css' | relative_url}}"
       rel="stylesheet"
       type="text/css"
     />
@@ -50,7 +50,7 @@
     <!-- Custom styles for this theme -->
     <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
     <link
-      href="{{'/assets/css/carpet-shop-home.css' | absolute_url}}"
+      href="{{'/assets/css/carpet-shop-home.css' | relative_url}}"
       rel="stylesheet"
     />
     <!-- Page container change top padding when nav shrinks -->
@@ -230,14 +230,14 @@
     </footer>
     <!-- End Footer -->
     <!-- Bootstrap core JavaScript -->
-    <script src="{{'/assets/js/jquery.min.js' | absolute_url}}"></script>
-    <script src="{{'/assets/js/bootstrap.bundle.min.js' | absolute_url}}"></script>
+    <script src="{{'/assets/js/jquery.min.js' | relative_url}}"></script>
+    <script src="{{'/assets/js/bootstrap.bundle.min.js' | relative_url}}"></script>
     <!-- Plugin JavaScript -->
-    <script src="{{'/assets/js/jquery.easing.min.js' | absolute_url}}"></script>
+    <script src="{{'/assets/js/jquery.easing.min.js' | relative_url}}"></script>
     <!-- Contact form JavaScript -->
-    <script src="{{'/assets/js/jqBootstrapValidation.js' | absolute_url}}"></script>
-    <script src="{{'/assets/js/contact_me.js' | absolute_url}}"></script>
+    <script src="{{'/assets/js/jqBootstrapValidation.js' | relative_url}}"></script>
+    <script src="{{'/assets/js/contact_me.js' | relative_url}}"></script>
     <!-- Custom scripts for this template -->
-    <script src="{{/'assets/js/agency.min.js' | absolute_url}}"></script>
+    <script src="{{/'assets/js/agency.min.js' | relative_url}}"></script>
   </body>
 </html>
