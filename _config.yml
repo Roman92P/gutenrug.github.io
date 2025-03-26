@@ -37,7 +37,7 @@ plugins:
 languages: ["en", "pl"]
 default_lang: "en"
 exclude_from_localizations: ["assets", "css", "js"]
-default_locale_in_subfolder: false
+default_locale_in_subfolder: true
 collections:
   posts:
     output: true
