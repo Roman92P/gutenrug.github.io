@@ -1,8 +1,8 @@
 # Jekyll configuration file
 cloud_name: test
-title: Guten Rug Studio
+title: Guten Rug Tufting Studio
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to the Guten Rug studio. Here, you can find unique, stylish, and handmade rugs that will perfectly fit your house or apartment. Explore our completed projects and get inspired
+  Welcome to the Guten Rug Tufting Studio. Here, you can find unique, stylish, and handmade rugs that will perfectly fit your house or apartment. Explore our completed projects and get inspired
 baseurl: ""
 url: "https://gutenrugtuftingstudio.com/"
 # baseurl: ""
