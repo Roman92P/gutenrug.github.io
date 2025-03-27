@@ -15,6 +15,7 @@
     />
     <meta name="author" content="" />
     <link rel="canonical" href="https://gutenrugtuftingstudio.com/" />
+    <link rel="icon" href="/assets/img/guten_rug_tufting_studio_icon.jpg" type="image/png" />
     <title>{{ page.title | escape}}</title>
     <!-- Bootstrap core CSS -->
     <link
