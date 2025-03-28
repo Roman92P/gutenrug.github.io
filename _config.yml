@@ -16,6 +16,7 @@ theme: jekyll-agency
 plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
+  - jekyll-sitemap
 languages: ["en", "pl"]
 default_lang: "en"
 exclude_from_localizations: ["assets", "css", "js"]

@@ -33,6 +33,7 @@ gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "jekyll-agency"
 gem 'jekyll-multiple-languages-plugin'
+gem 'jekyll-sitemap'
 
 # Add this line to load the patch
 require_relative "./dir_patch"

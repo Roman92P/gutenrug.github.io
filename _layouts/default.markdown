@@ -5,17 +5,18 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta
-      name="description"
-      content="Welcome to the Guten Rug Tufting Studio. Here, you can find unique, stylish, and handmade rugs that will perfectly fit your house or apartment. Explore our completed projects and get inspired"
-    />
-    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="Welcome to the Guten Rug Tufting Studio. Here, you can find unique, stylish, and handmade rugs that will perfectly fit your house or apartment. Explore our completed projects and get inspired"/>
+    <meta name="author" content="Guten Rug Tufting Studio" />
+    <meta name="keywords" content="Tufting, Rug, Guten Rug, Tufting Studio, Dywan, Dywan na zamówienie">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://gutenrugtuftingstudio.com/" />
-    <link rel="icon" href="/assets/img/guten_rug_tufting_studio_icon.jpg" type="image/png" />
+    <link rel="icon" href="/assets/img/guten_rug_tufting_studio_icon.jpg" type="image/png"/>
+    <meta property="og:title" content="Guten Rug Tufting Studio">
+    <meta property="og:description" content="Welcome to the Guten Rug Tufting Studio. Here, you can find unique, stylish, and handmade rugs that will perfectly fit your house or apartment. Explore our completed projects and get inspired">
+    <meta property="og:image" content="https://gutenrugtuftingstudio.com/assets/img/guten_rug_tufting_studio_icon.jpg">
+    <meta property="og:url" content="https://gutenrugtuftingstudio.com/">
+    <meta property="og:type" content="website">
     <title>{{ page.title | escape}}</title>
     <!-- Bootstrap core CSS -->
     <link
@@ -49,12 +50,19 @@
       type="text/css"
     />
     <!-- Custom styles for this theme -->
-    <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
     <link
       href="{{'/assets/css/carpet-shop-home.css' | relative_url}}"
-      rel="stylesheet"
+      rel="preload"
     />
-    <!-- Page container change top padding when nav shrinks -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Guten Rug Tufting Studio",
+        "description": "Welcome to the Guten Rug Tufting Studio. Here, you can find unique, stylish, and handmade rugs that will perfectly fit your house or apartment. Explore our completed projects and get inspired",
+        "url": "https://gutenrugtuftingstudio.com/"
+      }
+      </script>
   </head>
 
   <body id="page-top">
@@ -65,6 +73,7 @@
           <img
             class="guten-rug-nav-logo-short"
             src="{{'/assets/img/logo.svg' | relative_url}}"
+            alt="Guten Rug Tufting Studio navigation bar logo image"
           />
         </a>
         <button

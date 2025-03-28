@@ -1,30 +1,26 @@
 ---
 layout: none
-title: Guten Rug Tufting Studio - Home
+title: Guten Rug Tufting Studio
 permalink: /
 redirect_to: /en/
 lang: en
 ---
-
 <html lang="{{ site.lang }}">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta
-      name="description"
-      content="Welcome to the Guten Rug Tufting Studio. Here, you can find unique, stylish, and handmade rugs that will perfectly fit your house or apartment. Explore our completed projects and get inspired"
-    />
-    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="Welcome to the Guten Rug Tufting Studio. Here, you can find unique, stylish, and handmade rugs that will perfectly fit your house or apartment. Explore our completed projects and get inspired"/>
+    <meta name="author" content="Guten Rug Tufting Studio" />
+    <meta name="keywords" content="Tufting, Rug, Guten Rug, Tufting Studio, Dywan, Dywan na zamówienie">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://gutenrugtuftingstudio.com/" />
-    <link
-      rel="icon"
-      href="/assets/img/guten_rug_tufting_studio_icon.jpg"
-      type="image/png"
-    />
-    <title>Guten Rug Tufting Studio - Home</title>
+    <link rel="icon" href="/assets/img/guten_rug_tufting_studio_icon.jpg" type="image/png"/>
+    <meta property="og:title" content="Guten Rug Tufting Studio">
+    <meta property="og:description" content="Welcome to the Guten Rug Tufting Studio. Here, you can find unique, stylish, and handmade rugs that will perfectly fit your house or apartment. Explore our completed projects and get inspired">
+    <meta property="og:image" content="https://gutenrugtuftingstudio.com/assets/img/guten_rug_tufting_studio_icon.jpg">
+    <meta property="og:url" content="https://gutenrugtuftingstudio.com/">
+    <meta property="og:type" content="website">
+    <title>Guten Rug Tufting Studio</title>
     <!-- Bootstrap core CSS -->
     <link
       href="{{ '/assets/css/bootstrap.min.css' | relative_url }}"
@@ -57,11 +53,19 @@ lang: en
       type="text/css"
     />
     <!-- Custom styles for this theme -->
-    <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
     <link
       href="{{ '/assets/css/carpet-shop-home.css' | relative_url }}"
-      rel="stylesheet"
+      rel="preload"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Guten Rug Tufting Studio",
+        "description": "Welcome to the Guten Rug Tufting Studio. Here, you can find unique, stylish, and handmade rugs that will perfectly fit your house or apartment. Explore our completed projects and get inspired",
+        "url": "https://gutenrugtuftingstudio.com/"
+      }
+      </script>
   </head>
   <body id="page-top">
     <!-- Navigation -->
@@ -71,6 +75,7 @@ lang: en
           <img
             class="guten-rug-nav-logo-short"
             src="{{ '/assets/img/logo.svg' | relative_url }}"
+            alt="Guten Rug Tufting Studio navigation bar logo image"
           />
         </a>
 
@@ -200,7 +205,7 @@ lang: en
                 <img
                   class="post-lable-img"
                   src="{{ post.post_lable | relative_url }}"
-                  alt="post image"
+                  alt="Guten Rug Tufting Studio post image"
                 />
               </div>
               {% endif %} {% endfor %}
@@ -232,7 +237,7 @@ lang: en
                   <img
                     class="rounded-circle img-fluid"
                     src="{{ '/assets/img/timeline/1.jpg' | relative_url }}"
-                    alt=""
+                    alt="Guten Rug Tufting Studio timeline block opening image"
                   />
                 </div>
                 <div class="timeline-panel">
@@ -254,7 +259,7 @@ lang: en
                   <img
                     class="rounded-circle img-fluid"
                     src="{{ '/assets/img/frame.png' | relative_url }}"
-                    alt=""
+                    alt="Guten Rug Tufting Studio timeline rug frame image"
                   />
                 </div>
                 <div class="timeline-panel">
@@ -276,7 +281,7 @@ lang: en
                   <img
                     class="rounded-circle img-fluid"
                     src="{{ '/assets/img/work_begin.png' | relative_url }}"
-                    alt="image alt text"
+                    alt="Guten Rug Tufting Studio timeline block work begin image"
                   />
                 </div>
                 <div class="timeline-panel">
@@ -325,7 +330,7 @@ lang: en
               <img
                 class="mx-auto rounded-circle"
                 src="{{ '/assets/img/female contact avatar without headphones.png' | relative_url }}"
-                alt=""
+                alt="Guten Rug Tufting Studio contact avatar image"
               />
               <h4>Julia</h4>
               <p class="text-muted">Creator</p>
@@ -352,8 +357,8 @@ lang: en
             <div class="team-member">
               <img
                 class="mx-auto rounded-circle"
-                src="{{ '/assets/img/male contact avatar without words.png' | relative_url }}"
-                alt=""
+                src="{{ '/assets/img/male female contact avatar without words.png' | relative_url }}"
+                alt="Guten Rug Tufting Studio contact avatar image"
               />
               <h4>Roman</h4>
               <p class="text-muted">Support</p>
@@ -390,34 +395,6 @@ lang: en
       </div>
     </section>
     <!-- End Team -->
-    <!-- Clients -->
-    <!-- <section class="py-5" id=""clients>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <a href="https://github.com/raviriley/agency-jekyll-theme">
-            <img class="img-fluid d-block mx-auto" src="assets/img/clients/envato.jpg" alt="envato">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="https://github.com/raviriley/agency-jekyll-theme">
-            <img class="img-fluid d-block mx-auto" src="assets/img/clients/designmodo.jpg" alt="designmodo">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="https://github.com/raviriley/agency-jekyll-theme">
-            <img class="img-fluid d-block mx-auto" src="assets/img/clients/themeforest.jpg" alt="themeforest">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="https://github.com/raviriley/agency-jekyll-theme">
-            <img class="img-fluid d-block mx-auto" src="assets/img/clients/creative-market.jpg" alt="Creative Market">
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </section> -->
     <!-- Contact -->
     <section class="page-section" id="contact">
       <div class="container">
@@ -538,16 +515,6 @@ lang: en
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
-              <!-- <li class="list-inline-item">
-              <a href="https://linkedin.com">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li> -->
-              <!-- <li class="list-inline-item">
-              <a href="https://github.com/raviriley">
-                <i class="fab fa-github"></i>
-              </a>
-            </li> -->
               <li class="list-inline-item">
                 <a href="https://www.instagram.com/guten_rug/">
                   <i class="fab fa-instagram"></i>
