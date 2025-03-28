@@ -52,7 +52,7 @@
     <!-- Custom styles for this theme -->
     <link
       href="{{'/assets/css/carpet-shop-home.css' | relative_url}}"
-      rel="preload"
+      rel="stylesheet"
     />
     <script type="application/ld+json">
       {
